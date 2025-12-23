@@ -20,12 +20,12 @@ This system is built to:
 **End-to-end flow:**
 
 
-Incoming Transaction
-↓
-Feature Engineering
-↓
-ML Model → Fraud Probability
-↓
-Risk Threshold + Business Rules
-↓
-Fraud / Not Fraud Decision
+Incoming Transaction → Feature Engineering → ML Model (Fraud Probability) → 
+Risk Threshold + Business Rules → Fraud / Not Fraud Decision
+
+In real-world fraud systems:
+- Models run behind APIs, not notebooks
+- Decisions are probability-based, not just class labels
+- Business thresholds control false positives and review costs
+
+This project is designed to reflect those real production constraints.
