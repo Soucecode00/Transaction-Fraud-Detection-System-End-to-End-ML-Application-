@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def build_fraud_features(df: pd.DataFrame) -> pd.DataFrame:
+def build_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Build behavioral fraud features for transactional fraud detection.
 
