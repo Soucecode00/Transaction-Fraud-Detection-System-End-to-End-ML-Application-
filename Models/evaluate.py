@@ -63,7 +63,7 @@ def evaluate_model(
                 "f1": f1,
                 "confusion_matrix": confusion_matrix(y_val, y_pred),
                 "classification_report": classification_report(
-                    y_val, y_pred, digits=4
+                    y_val, y_pred, digits=4, zero_division=0
                 )
             }
 

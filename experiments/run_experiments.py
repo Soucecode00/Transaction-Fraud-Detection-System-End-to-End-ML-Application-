@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add parent directory to path so we can import src and other modules
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import joblib
 from sklearn.model_selection import train_test_split
 
@@ -49,6 +55,9 @@ def run():
 
     # 5. Evaluate
     eval_results = evaluate_model(model, X_val, y_val)
+
+    print('The Evaluation results are:', eval_results)
+    print(f"Best threshold: {eval_results['best_threshold']:.4f}")
 
     # # 6. Save FINAL model
     # joblib.dump(

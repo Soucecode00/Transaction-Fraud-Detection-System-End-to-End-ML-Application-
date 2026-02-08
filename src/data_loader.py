@@ -17,4 +17,4 @@ def load_data():
         raise FileNotFoundError(f"Data file not found at path: {data_path}")
     
     df = pd.read_csv(data_path)
-    return df
+    return df   
