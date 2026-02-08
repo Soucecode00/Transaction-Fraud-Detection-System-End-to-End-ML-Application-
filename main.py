@@ -1,6 +1,6 @@
 # main.py
 # 1. Reach into the 'src' folder and grab the 'load_data' tool
-from src.data_loader import load_data
+from ML_Engine.src.data_loader import load_data
 
 def start_pipeline():
     print("--- Starting Fraud Detection Pipeline ---")
